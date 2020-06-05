@@ -1,7 +1,7 @@
 import Linefit_iminuit
 import MolData
 
-maxradius = 0.5 #0.4  # arcsec, radius inside  of which to make the fit
+maxradius = 0.8 #0.4  # arcsec, radius inside  of which to make the fit
 J_up=2
 ncores = 30                
     

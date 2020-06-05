@@ -3,6 +3,8 @@
 destination=/Users/simon/common/python/pylinefit/
 origin=/strelka_ssd/simon/HD135344B/linefit/
 
+rsync -va $origin\README                            $destination
+
 rsync -va $origin\MolData.py                        $destination
 rsync -va $origin\gen_Dmoments.py		    $destination
 rsync -va $origin\run_shrink.py			    $destination

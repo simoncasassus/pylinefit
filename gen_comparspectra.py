@@ -385,18 +385,18 @@ modelcube='/strelka_ssd/simon/HD135344B/linefit/output_iminuit_multiso/model_CO.
 restfreq=230.5380000*1E9
 fileout = 'fig_comparespectra.pdf'
 
-workdir='/strelka_ssd/simon/HD135344B/Dmoments/13CO_sgaussminuit_nobase_z/'
-obscube='/strelka_ssd/simon/HD135344B/red/tclean_contsubHD135344Bbriggs2.0_13CO_z.fits'
-modelcube='/strelka_ssd/simon/HD135344B/linefit/output_iminuit_multiso/model_13C16O.fits'
-restfreq=220.3986841281*1E9
-fileout = 'fig_comparespectra_13CO.pdf'
+#workdir='/strelka_ssd/simon/HD135344B/Dmoments/13CO_sgaussminuit_nobase_z/'
+#obscube='/strelka_ssd/simon/HD135344B/red/tclean_contsubHD135344Bbriggs2.0_13CO_z.fits'
+#modelcube='/strelka_ssd/simon/HD135344B/linefit/output_iminuit_multiso/model_13C16O.fits'
+#restfreq=220.3986841281*1E9
+#fileout = 'fig_comparespectra_13CO.pdf'
 
 
-workdir='/strelka_ssd/simon/HD135344B/Dmoments/13CO_sgaussminuit_nobase_z/'
-obscube='/strelka_ssd/simon/HD135344B/red/tclean_contsubHD135344Bbriggs2.0_C18O_z.fits'
-modelcube='/strelka_ssd/simon/HD135344B/linefit/output_iminuit_multiso/model_C18O.fits'
-restfreq=219.5603541*1E9
-fileout = 'fig_comparespectra_C18O.pdf'
+#workdir='/strelka_ssd/simon/HD135344B/Dmoments/13CO_sgaussminuit_nobase_z/'
+#obscube='/strelka_ssd/simon/HD135344B/red/tclean_contsubHD135344Bbriggs2.0_C18O_z.fits'
+#modelcube='/strelka_ssd/simon/HD135344B/linefit/output_iminuit_multiso/model_C18O.fits'
+#restfreq=219.5603541*1E9
+#fileout = 'fig_comparespectra_C18O.pdf'
 
 filename_fiterrormap=workdir+'fiterrormap.fits'
 cmap='ocean_r'

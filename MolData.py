@@ -1,19 +1,3 @@
-"""
-Code created by Christian Flores,
-adapted by F. Alarcon
-"""
-
-#------------------------------------------------------------------------------------------------
-#module imported as ccs
-#------------------------------------------------------------------------------------------------
-#from constants import rest_freq_C18O
-#from constants import rest_freq_12CO
-#from constants import rest_freq_13CO
-#
-#from constants import A_C18
-#from constants import A_C12
-#from constants import A_C13
-
 import numpy as np
 import sys
 import astropy.constants as const
@@ -66,19 +50,12 @@ def load_moldata(inputfile):
 
 
     # max temperature:
-    Emax=levelenergies[-1]
-    g_J_max=g_Js[-1]
-    epsilon=1E-2 # some small number for epsilon = g_J * exp(-E/kT)
-    Tmax = -(Emax/k_B)* np.log(epsilon / g_J_max)
-    print("OK v=0 up to T= ",Tmax," for Emax = ",Emax," g_J_max ", g_J_max)
+    #Emax=levelenergies[-1]
+    #g_J_max=g_Js[-1]
+    #epsilon=1E-2 # some small number for epsilon = g_J * exp(-E/kT)
+    #Tmax = -(Emax/k_B)* np.log(epsilon / g_J_max)
+    #print("OK v=0 up to T= ",Tmax," for Emax = ",Emax," g_J_max ", g_J_max)
         
-    #print("check units")
-    #import astropy.units as u
-    #print(0.000123986*u.eV.to(u.erg),"  ",c_light * h_P)
-
-    # levelenergies *=  
-    #levelenergies *= 0.000123986  #cm^-1 to eV
-    #levelenergies *= u.eV.to(u.erg)  #eV to erg
 
     MasterMolData['levelenergies']=levelenergies
     MasterMolData['g_Js']=g_Js
@@ -124,12 +101,6 @@ def B_21(A_21,nu):
         input Einstein A and restfreq in Hz
         Return B value for stimulated radiative de-excitations
         """
-
-        # B21=(c**2/(2*h*nu**3)) * A21
-        # B12=(g2/g1)*B21
-        # f12=B12*h*nu*m_e*c/(4*math.pi**2 *q_e**2)
-        # sigma=math.pi*q_e**2*f12/(m_e*c)
-        # alpha = (c_light**2 * A21) / (8 * np.pi * nu**2)  # IT IS NOT CROSS_SECTION
 
         B_21 = A_21 / ((2. * h_P * nu**3)/ c**2)
         
